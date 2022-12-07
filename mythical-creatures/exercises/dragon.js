@@ -3,6 +3,7 @@ class Dragon {
         this.name = name
         this.rider = rider
         this.hungry = true
+        this.food = 0
     }
 
     greet() {
@@ -11,12 +12,15 @@ class Dragon {
     }
 
     eat() {
-       if (this.name.hungry.count >= 3) {
-        return this.hungry = false
-       }
+        this.food += 1
+        if(this.food < 3) {
+        return this.hungry = true
+        } return this.hungry = false
     } 
+
+} 
     
     
-}
+
 
 module.exports = Dragon;
