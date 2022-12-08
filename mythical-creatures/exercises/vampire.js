@@ -6,18 +6,16 @@ class Vampire {
         this.name = vampName,
         this.pet = vampPet || 'bat'
         this.thirsty = true
-        this.blood = 0
         this.ouncesDrank = 0
     }
 
     drink() {
-        this.blood += 1
-        if (this.blood > 0) {
-            return this.thirsty = false
-        }
+        if(this.ouncesDrank === 50) {
+            return 'I\'m too full to drink anymore!'
+         }
+        this.ouncesDrank += 10 
+        this.thirsty = false
     }
-
-
 }
 
 
