@@ -15,13 +15,13 @@ describe('Hobbit', function() {
     assert.equal(mark.name, 'Mark');
   });
 
-  it.skip('should start out 0 years old', function() {
+  it('should start out 0 years old', function() {
     var bilbo = new Hobbit({ name: 'Bilbo' });
 
     assert.equal(bilbo.age, 0);
   });
 
-  it.skip('should gain 1 year after every birthday', function() {
+  it('should gain 1 year after every birthday', function() {
     var hobbit = new Hobbit({ name: 'Meriadoc' });
 
     hobbit.celebrateBirthday();
