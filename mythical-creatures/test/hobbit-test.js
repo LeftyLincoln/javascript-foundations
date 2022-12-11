@@ -37,10 +37,11 @@ describe('Hobbit', function() {
     };
   };
 
-  it.skip('should be considered a child at the age of 32', function() {
+  it('should be considered a child at the age of 32', function() {
     var hobbit = new Hobbit({ name: 'Taylor' });
 
-    // Notice that timeTravel is a function in this file (lines 34 - 38). You do not need to put a timeTravel method in your Hobbit class. Look at the timeTravel function above...
+    // Notice that timeTravel is a function in this file (lines 34 - 38). You do not need to put a timeTravel method in your Hobbit class. 
+    //Look at the timeTravel function above...
       // - What method is being invoked within timeTravel?
       // - How many times is it being invoked?
       // - What method do you need to update in your Hobbit class?
@@ -51,7 +52,7 @@ describe('Hobbit', function() {
     assert.equal(hobbit.adult, false);
   });
 
-  it.skip('should be considered an adult at 33', function() {
+  it('should be considered an adult at 33', function() {
     var hobbit = new Hobbit({ name: 'Taylor' });
 
     timeTravel(33, hobbit);
@@ -60,7 +61,7 @@ describe('Hobbit', function() {
     assert.equal(hobbit.adult, true);
   });
 
-  it.skip('should be considered old at the age of 101', function() {
+  it('should be considered old at the age of 101', function() {
     var hobbit = new Hobbit({ name: 'Samwise' });
 
     assert.equal(hobbit.old, false)
