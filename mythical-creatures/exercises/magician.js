@@ -1,8 +1,20 @@
 
 class Magician {
-    constructor({}) {
-        this.name = {}
+    constructor({name, assistant, clothing}) {
+        this.name = `The Great ${name}`
+        this.assistant = assistant
+        this.favoriteAccessory = clothing || 'top hat'  
     }
+
+    performIncantation(spell) {
+        return `${spell.toUpperCase()}!`
+    }
+
+    performTrick() {
+
+    }
+
+
 }
 
 
