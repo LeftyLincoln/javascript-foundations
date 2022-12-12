@@ -3,8 +3,8 @@ var assert = require('chai').assert;
 
 describe("Dog", function() {
 
-  it.skip('should have a name and age', function() {
-    var luna = new Dog({ name: 'Luna', age: 3});
+  it('should have a name and age', function() {
+    var luna = new Dog({ name: 'Luna', age: 3})
     var toph = new Dog({ name: 'Toph', age: 2.5});
 
     assert.equal(luna.name, 'Luna');
@@ -14,7 +14,7 @@ describe("Dog", function() {
     assert.equal(toph.age, 2.5);
   })
 
-  it.skip('should start off hungry, with some energy, and no friends', function() {
+  it('should start off hungry, with some energy, and no friends', function() {
     var cap = new Dog({ name: 'Cap', age: 0.5});
 
     assert.equal(cap.energyLevel, 5);
@@ -22,7 +22,7 @@ describe("Dog", function() {
     assert.deepEqual(cap.friends, []);
   })
 
-  it.skip('should no longer be hungry after eating', function() {
+  it('should no longer be hungry after eating', function() {
     var goose = new Dog({ name: 'Goose', age: 1.5});
 
     assert.equal(goose.hungry, true);
@@ -33,7 +33,7 @@ describe("Dog", function() {
     assert.equal(happyGoose, 'Yum!');
   })
 
-  it.skip('should not eat if they\'re not hungry', function() {
+  it('should not eat if they\'re not hungry', function() {
     var wren = new Dog({ name: 'Wren', age: 5});
 
     var firstMeal = wren.eat();
