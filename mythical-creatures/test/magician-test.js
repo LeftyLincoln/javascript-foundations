@@ -50,7 +50,7 @@ it('', function() {
     assert.equal(charm, 'ALLAKAZAAM!');
   });
 
-it.skip('', function() {
+it('', function() {
     var magician1 = new Magician({ name: 'Hannah' });
     var magician2 = new Magician({ name: 'Kayla', clothing: 'top hat' });
 

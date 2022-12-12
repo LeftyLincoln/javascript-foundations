@@ -10,8 +10,8 @@ class Magician {
         return `${spell.toUpperCase()}!`
     }
 
-    performTrick() {
-
+    performTrick(spells) {
+        return spells
     }
 
 
