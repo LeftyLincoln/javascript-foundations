@@ -9,17 +9,17 @@ class Hobbit {
     }
 
     celebrateBirthday() {
-        this.age += 1
-        if(this.age === 33) {
-          this.adult = true  
-        }
-        if (this.age >= 101) {
-          this.old = true    
-        }
+      this.age += 1
+      if (this.age === 33) {
+        this.adult = true
+      }
+      if (this.age >= 101) {
+        this.old = true
+      }
     }
 
     getRing() {
-      if (this.name === 'Frodo') {
+      if (this.name === "Frodo") {
         this.hasRing = true
         return 'Here is the ring!'
       } else {
@@ -27,6 +27,7 @@ class Hobbit {
         return 'You can\'t have it!'
       }
     }
+
 }
 
 

@@ -3,7 +3,9 @@ class Statue {
     constructor(name) {
       this.name = name
     }
+
 }
+
 
 
 
