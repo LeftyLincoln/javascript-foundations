@@ -21,6 +21,7 @@ class Medusa {
         // console.log('statues array after shift: ',this.statues)
         this.statues.push(statue)
         // console.log('statues array after push: ',this.statues)
+        person.mood = 'relieved'
         return person
       }
     }
