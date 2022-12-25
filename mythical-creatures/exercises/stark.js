@@ -14,14 +14,13 @@ class Stark {
             return 'Winter is Coming'
         }
 }
-    callDirewolf(name, location) {
-        new Direwolf
-        
-    }
-
-    
+    callDirewolf(name, home) {
+       var direWolf = new Direwolf(name, this.location)
+       direWolf.starksToProtect.push(this)
+       this.safe = true
+       return direWolf
 }
-
+}
 
 
 module.exports = Stark;

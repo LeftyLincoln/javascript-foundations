@@ -1,4 +1,4 @@
-var Stark = require('./stark');
+
 
 class Direwolf {
     constructor(name, home, size) {
@@ -24,8 +24,9 @@ class Direwolf {
         }
     }
 
+ }
 
-}
+
 
 
 
