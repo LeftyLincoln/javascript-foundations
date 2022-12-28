@@ -1,8 +1,8 @@
-const Material = require("./material");
 
 class Craft {
-    constuctor() {
-       this.name = 
+    constructor(object) {
+        console.log(object)
+        this.name = object.type
         
     }
 }
