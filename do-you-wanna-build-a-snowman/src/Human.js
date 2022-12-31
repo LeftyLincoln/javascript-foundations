@@ -27,16 +27,8 @@ class Human {
             buttons: this.materials.buttons
         })     
     }
-    placeMagicHat(object) {
-        if (object.coal < 2 || object.buttons < 5 
-            || object.carrots < 1 || object.snowballs < 2) {
-             object.magicHat = false
-             return 'I guess I didn\'t build it correctly.'
-            } else {
-                object.magicHat = true
-                return 'Woah, this snowman is coming to life!'
-            }   
-    }
+    placeMagicHat(snowman) {
+      return snowman.canWearMagicHat() ? 'Woah, this snowman is coming to life!' : 'I guess I didn\'t build it correctly.'
 }
-
+}
 module.exports = Human;
