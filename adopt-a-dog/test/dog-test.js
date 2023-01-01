@@ -42,7 +42,7 @@ describe("Dog", function() {
     assert.equal(secondMeal, 'I refuse to eat.');
   })
 
-  it.skip('should burn energy when playing', function() {
+  it('should burn energy when playing', function() {
     var connie = new Dog({ name: 'Conrad', age: 4 });
 
     assert.equal(connie.energyLevel, 5);
@@ -53,7 +53,7 @@ describe("Dog", function() {
     assert.equal(fetchingPup, 'This is fun!');
   })
 
-  it.skip('should not fetch the ball if they\'re too tired', function() {
+  it('should not fetch the ball if they\'re too tired', function() {
     //note: they should only fetch with an energy level of more than 3
     var connie = new Dog({ name: 'Conrad', age: 4 });
 
@@ -70,7 +70,7 @@ describe("Dog", function() {
     assert.equal(thirdFetch, 'Nah, I\'m going to sleep instead.');
   })
 
-  it.skip('should rest to get more energy', function() {
+  it('should rest to get more energy', function() {
     var goose = new Dog({ name: 'Goose', age: 1.5});
 
     assert.equal(goose.energyLevel, 5);
@@ -80,7 +80,7 @@ describe("Dog", function() {
     assert.equal(goose.energyLevel, 6);
   })
 
-  it.skip('should not be able to get an energy level higher than 10', function() {
+  it('should not be able to get an energy level higher than 10', function() {
     var cap = new Dog({ name: 'Cap', age: 0.5});
 
     assert.equal(cap.energyLevel, 5);
@@ -94,7 +94,7 @@ describe("Dog", function() {
     assert.equal(cap.energyLevel, 10);
   })
 
-  it.skip('should be able to gain new friends', function() {
+  it('should be able to gain new friends', function() {
     var cap = new Dog({ name: 'Cap', age: 2});
     var psi = new Dog({ name: 'Psi', age: 3});
 
