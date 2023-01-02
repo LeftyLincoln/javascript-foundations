@@ -11,7 +11,6 @@ class Skatepark {
     }
 
     admit (object) {
-        
         if (this.isPrivate) {
             if (this.cost > object.money) {
                 return `Sorry, you don't have enough money.`
