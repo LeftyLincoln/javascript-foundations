@@ -7,13 +7,13 @@ class Material {
     }
 
     useMaterial(amountUsed) {
-        // console.log(amountUsed)
-        this.amount -= amountUsed
-        if (this.amount <= 0) {
-            return  `You don\'t have enough ${this.name}! Try using ${this.amount + amountUsed} ${this.units} or less.`
-        } 
-        return `You now have ${this.amount} ${this.units} of ${this.name} left.`
+        if (this.amount < amountUsed) {
+            return  `You don\'t have enough ${this.name}! Try using ${this.amount} ${this.units} or less.`
+        } else {
+            this.amount -= amountUsed
+            return `You now have ${this.amount} ${this.units} of ${this.name} left.`
     }
+}
 
     calculateMaterialCost() {
         return this.price * this.amount
