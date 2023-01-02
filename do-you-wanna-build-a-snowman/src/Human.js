@@ -2,7 +2,6 @@ var Snowman = require('./Snowman');
 
 class Human {
     constructor(name) {
-        // console.log(name)
         this.name = name
         this.wantsToBuildASnowman = true
         this.materials = {
@@ -13,10 +12,8 @@ class Human {
         }
     }
 
-
     gatherMaterials(type, amount) {
         this.materials[type] += amount
-
     }
 
     buildASnowman() {
