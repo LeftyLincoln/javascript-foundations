@@ -1,6 +1,5 @@
 class Golfer {
     constructor(golfObject) {
-        // console.log(golfObject)
         this.name = golfObject.name
         this.handicap = golfObject.handicap
         this.frustration = 0
@@ -24,7 +23,6 @@ class Golfer {
     }
 
     marvel(golfCourse) {
-        // console.log(golfCourse)
         return `I love the ${golfCourse.features[0]} and ${golfCourse.features[1]} on this course!`
     }
 

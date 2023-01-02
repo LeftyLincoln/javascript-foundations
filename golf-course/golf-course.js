@@ -7,8 +7,6 @@ class GolfCourse {
         this.currentlyPlaying = []   
     }
     checkInGroup(group) {
-        console.log(group)
-
         if (group.length <= this.openings) {
             for (var i = 0; i < group.length; i ++) {
                 this.currentlyPlaying.unshift(group[i].name)
