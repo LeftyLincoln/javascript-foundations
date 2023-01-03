@@ -1,7 +1,6 @@
 
 class Craft {
     constructor(object) {
-        console.log(object)
         this.name = object.type
         this.materials = object.materials   
         this.completed = false
@@ -13,7 +12,7 @@ class Craft {
     }
 
     calculateProjectTotal() {
-        return 
+       return this.materials[0].calculateMaterialCost() + this.materials[1].calculateMaterialCost()
     }
 
 }

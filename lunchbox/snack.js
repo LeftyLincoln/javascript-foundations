@@ -1,6 +1,5 @@
 class Snack {
     constructor(snack) {
-        console.log(snack)
         this.deliciousLevel = "extra"
         this.type = snack
         this.amount = 100
@@ -14,6 +13,13 @@ class Snack {
             this.cuttingItClose = true
         }
      }
-}
 
+     checkForHealthy() {
+        if (this.type.toLowerCase().includes('fruit'))  {
+            return true
+        } else {
+            return false
+        }
+    }   
+}
 module.exports = Snack;
