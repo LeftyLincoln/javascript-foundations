@@ -1,6 +1,5 @@
 class Skatepark {
     constructor(object) {
-        // console.log(object)
         this.name = object.name
         this.yearFounded = object.year
         this.style = object.type
