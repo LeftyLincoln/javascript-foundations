@@ -16,8 +16,7 @@ class Stark {
 }
     callDirewolf(name) {
        var direWolf = new Direwolf(name, this.location)
-       direWolf.starksToProtect.push(this)
-       this.safe = true
+       direWolf.protect(this)
        return direWolf
 }
 }
