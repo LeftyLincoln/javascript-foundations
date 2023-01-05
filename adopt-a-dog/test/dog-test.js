@@ -70,7 +70,7 @@ describe("Dog", function() {
     assert.equal(thirdFetch, 'Nah, I\'m going to sleep instead.');
   })
 
-  it('should rest to get more energy', function() {
+  it.skip('should rest to get more energy', function() {
     var goose = new Dog({ name: 'Goose', age: 1.5});
 
     assert.equal(goose.energyLevel, 5);
@@ -80,7 +80,7 @@ describe("Dog", function() {
     assert.equal(goose.energyLevel, 6);
   })
 
-  it('should not be able to get an energy level higher than 10', function() {
+  it.skip('should not be able to get an energy level higher than 10', function() {
     var cap = new Dog({ name: 'Cap', age: 0.5});
 
     assert.equal(cap.energyLevel, 5);

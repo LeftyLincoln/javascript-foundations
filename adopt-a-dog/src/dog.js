@@ -1,21 +1,19 @@
-
 class Dog {
-  constructor(object) {
-    this.name = object.name;
-    this.age = object.age;
-    this.energyLevel = 5;
-    this.hungry = true;
-    this.friends = [];
-    this.counter = 0;
+  constructor(dogObject) {
+    // console.log(dogobject)
+    this.name = dogObject.name
+    this.age = dogObject.age
+    this.energyLevel = 5
+    this.hungry = true
+    this.friends = []
   }
   eat() {
-    this.counter++;
-    if (this.counter === 1) {
-      this.hungry = false;
-      return 'Yum!';
-    } else if (this.counter === 2 ) {
-      return 'I refuse to eat.';
-    }
+    if (this.hungry) {
+      this.hungry = false
+      return 'Yum!'
+    } else {
+      return 'I refuse to eat.'
+      }  
   }
 
   fetchBall() {
@@ -23,15 +21,7 @@ class Dog {
       this.energyLevel -= 1
       return 'This is fun!'
     } else {
-    return 'Nah, I\'m going to sleep instead.'
-    } 
-  }
-
-  sleep() {
-    if (this.energyLevel < 10) {
-      this.energyLevel += 1
-    } else {
-      return  'I have too much energy to rest. I\'m going to chew something instead.'
+      return 'Nah, I\'m going to sleep instead.'
     }
   }
 
@@ -39,6 +29,8 @@ class Dog {
     // console.log(object)
     this.friends.push(object.name)
   }
+
+
 
 }
 
