@@ -1,3 +1,5 @@
+var LunchBox = require('./lunchbox.js')
+
 class Snack {
     constructor(snack) {
         this.deliciousLevel = "extra"
@@ -5,6 +7,7 @@ class Snack {
         this.amount = 100
         this.isInLunchBox = false
         this.cuttingItClose = false
+
     }
 
     getEaten() {
