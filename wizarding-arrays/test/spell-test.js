@@ -2,21 +2,21 @@ const assert = require('chai').assert;
 const Spell = require('../lib/spell');
 
 describe('Wizard spells', () => {
-  it.skip('should have a name and a description', () => {
+  it('should have a name and a description', () => {
     const spell = new Spell('wingardium leviosa', 'makes things levitate');
 
     assert.equal(spell.name, 'wingardium leviosa');
     assert.equal(spell.description, 'makes things levitate');
   });
 
-  it.skip('can be executed', () => {
+  it('can be executed', () => {
     const spell = new Spell('wingardium leviosa', 'makes things levitate');
     const target = "book";
 
     assert.equal(spell.execute(target), "Success! You've cast a spell on the book.");
   });
 
-  it.skip('can execute against multiple targets', () => {
+  it('can execute against multiple targets', () => {
     const spell = new Spell('wingardium leviosa', 'makes things levitate');
 
     const target1 = "book";
