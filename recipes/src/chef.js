@@ -12,8 +12,7 @@ class Chef {
   // console.log(rating);
   for (var i = 0; i < this.recipeBox.length; i++)
   if (this.recipeBox[i].name === recipeName) {
-    this.recipeBox[i].attempted = true
-    this.recipeBox[i].rating = rating
+   this.recipeBox[i].rateRecipe(rating)
   }
  }
 
