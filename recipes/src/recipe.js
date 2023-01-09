@@ -1,6 +1,6 @@
 class Recipe {
   constructor(object) {
-    console.log(object);
+    // console.log(object);
     this.name = object.name
     this.ingredients = object.ingredients
     this.attempted = false
@@ -21,8 +21,13 @@ changeIngredientAmount(ingredient, newAmount) {
 }
 
 generateGroceryList() {
- 
+ var list = "You need:" 
+ for (var i = 0; i < this.ingredients.length; i++) {
+  list += ` ${this.ingredients[i].amount} ${this.ingredients[i].name},`
+ }
+ return list
 }
+
 
 
 }
